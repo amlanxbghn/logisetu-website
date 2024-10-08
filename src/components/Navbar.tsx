@@ -1,20 +1,21 @@
 "use client";
 
 import React, { useState } from 'react';
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Navbar = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
     <section>
-      <nav className="relative py-3 bg-white/15 border-b border-white/20 backdrop-blur z-50">
+      <nav className="relative py-3 bg-white/10 border-b border-white/20 backdrop-blur z-50">
         <div className="container px-4 mx-auto">
           <div className="flex items-center relative">
             <a
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block text-lg font-bold"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block text-lg font-semibold"
               href="#"
             >
-              <h1 className=''>LogiSetu</h1>
+              <h1 className=''>LOGISETU</h1>
             </a>
 
             <div className="lg:hidden ml-auto">
@@ -32,22 +33,22 @@ const Navbar = () => {
             <ul className="hidden lg:flex lg:w-auto lg:space-x-12">
               <li>
                 <a className="nav-item" href="#">
-                  Mission
+                  Our Mission
                 </a>
               </li>
               <li>
                 <a className="nav-item" href="#">
-                  Advantage
+                  Advantages
                 </a>
               </li>
               <li>
                 <a className="nav-item" href="#">
-                  Model
+                  Business Model
                 </a>
               </li>
               <li>
                 <a className="nav-item" href="#">
-                  Team
+                  Our Team
                 </a>
               </li>
             </ul>
@@ -57,10 +58,13 @@ const Navbar = () => {
                   Sign In
                 </a>
                 <a
-                  className="relative group inline-block py-2.5 px-3 text-sm font-medium text-black bg-white rounded-md overflow-hidden"
+                  className="relative group inline-block py-2.5 px-3 text-sm font-semibold text-black bg-white rounded-md overflow-hidden"
                   href="#"
                 >
-                  <span className="relative">Contact Us</span>
+                  <span className="flex items-center relative">
+                    Contact Us
+                    <MdKeyboardArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+                  </span>
                 </a>
               </div>
             </div>
@@ -74,23 +78,23 @@ const Navbar = () => {
           <div>
             <ul className="mb-2">
               <li>
-                <a className="block py-4 px-5 text-black hover:bg-[#0096FF]/20 rounded-lg" href="#">
-                  Mission
+                <a className="block py-4 px-5 text-black hover:bg-blue-200 rounded-lg" href="#">
+                  Our Mission
                 </a>
               </li>
               <li>
-                <a className="block py-4 px-5 text-black hover:bg-[#0096FF]/20 rounded-lg" href="#">
-                  Advantage
+                <a className="block py-4 px-5 text-black hover:bg-blue-200 rounded-lg" href="#">
+                  Advantages
                 </a>
               </li>
               <li>
-                <a className="block py-4 px-5 text-black hover:bg-[#0096FF]/20 rounded-lg" href="#">
-                  Model
+                <a className="block py-4 px-5 text-black hover:bg-blue-200 rounded-lg" href="#">
+                  Business Model
                 </a>
               </li>
               <li>
-                <a className="block py-4 px-5 text-black hover:bg-[#0096FF]/20 rounded-lg" href="#">
-                  Team
+                <a className="block py-4 px-5 text-black hover:bg-blue-200 rounded-lg" href="#">
+                  Our Team
                 </a>
               </li>
             </ul>
