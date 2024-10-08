@@ -5,7 +5,7 @@ export default function BusinessModel() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-black">
       <div className="container px-4 md:px-6 mx-auto">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-3 tracking-tight bg-gradient-to-b from-white via-white to-[#111111] text-transparent bg-clip-text">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-3 tracking-tight bg-gradient-to-b from-white via-white to-[#111111] text-transparent bg-clip-text">
           Our Business Model
         </h2>
         <p className="mb-12 text-center text-zinc-400 text-md md:text-lg font-medium">
