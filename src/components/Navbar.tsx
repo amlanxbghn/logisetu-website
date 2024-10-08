@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <section>
-      <nav className="relative py-3 bg-white/10 border-b border-white/20 backdrop-blur z-50">
+      <nav className="py-3 bg-white/10 border-b border-white/20 backdrop-blur z-50 fixed top-0 left-0 right-0">
         <div className="container px-4 mx-auto">
           <div className="flex items-center relative">
             <a
