@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .nav-item {
+    @apply text-sm transition-colors hover:text-[#0096FF] duration-300 inline-block ;
+  }
+}

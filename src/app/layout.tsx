@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import {Inter} from "next/font/google";
+import {Poppins} from "next/font/google";
 import "./globals.css";
 import {twMerge} from "tailwind-merge";
 
-const inter = Inter({
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={twMerge(inter.className, "bg-black text-white antialiased")}
+        className={twMerge(poppins.className, "bg-black text-white antialiased")}
       >
         {children}
       </body>
