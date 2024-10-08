@@ -67,7 +67,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="mt-8 pt-8 border-t border-white/20 text-center">
+                    <div className="mt-8 pt-4 border-t border-white/20 text-center">
                         <p className="text-sm text-zinc-400">&copy; 2024 LogiSetu. All rights reserved.</p>
                     </div>
                 </div>
