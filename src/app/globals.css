@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    letter-spacing: -0.025em; /* tracking-tight */
+  }
   .nav-item {
     @apply text-sm transition-colors text-zinc-400 hover:text-white inline-block ;
   }

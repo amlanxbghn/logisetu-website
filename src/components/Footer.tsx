@@ -11,10 +11,9 @@ const Footer = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="flex flex-col justify-between">
                             <div>
-                                <h3 className="text-lg font-semibold mb-4">About LogiSetu</h3>
+                                <h3 className="text-lg font-semibold mb-1">LOGISETU</h3>
                                 <p className="text-sm text-zinc-400">
-                                    LogiSetu is revolutionizing India's logistics industry with AI-powered solutions,
-                                    providing a unified platform for efficient and cost-effective transportation.
+                                    Transforming Transportation
                                 </p>
                             </div>
                             <div className="flex space-x-4 mt-4">
