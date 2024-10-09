@@ -58,7 +58,7 @@ const Navbar = () => {
                   Sign In
                 </a>
                 <a
-                  className="relative group inline-block py-2.5 px-3 text-sm font-semibold text-black bg-white rounded-md overflow-hidden"
+                  className="relative group inline-block py-2.5 px-3 text-sm font-semibold text-black bg-white rounded-md overflow-hidden shadow-lg"
                   href="#"
                 >
                   <span className="flex items-center relative">
