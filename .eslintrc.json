@@ -1,8 +1,13 @@
+// {
+//   "extends": ["next/core-web-vitals", "next/typescript"],
+//   "eslint": {
+//     "rules": {
+//       "react/no-unescaped-entities": "off"
+//     }
+//   }
+// }
 {
-  "extends": ["next/core-web-vitals", "next/typescript"],
-  "eslint": {
-    "rules": {
-      "react/no-unescaped-entities": "off"
-    }
+  "rules": {
+    "react/no-unescaped-entities": "off"
   }
 }
