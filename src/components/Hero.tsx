@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md"
 
 const Hero = () => {
   return (
-    <div className="py-36">
+    <div className="relative py-36">
       <div className="container">
 
         <div className="z-10 flex mb-12 items-center justify-center">
@@ -35,6 +35,9 @@ const Hero = () => {
         </div>
 
       </div>
+
+      <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent opacity-10"></div>
+
     </div>
   )
 }

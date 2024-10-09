@@ -2,7 +2,6 @@
 
 import { FC, ReactNode, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-
 import { cn } from "@/lib/utils";
 
 interface TextRevealByWordProps {
@@ -14,38 +13,34 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
   text,
   className,
 }) => {
-  const targetRef = useRef<HTMLDivElement | null>(null);
-
+  const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
+    offset: ["start 80%", "end 20%"] // Adjusted offset for more responsive reveal
   });
-  const words = text.split(" ");
+
+  const sentences = text.split("|");
+  const totalWords = text.split(" ").length;
 
   return (
-    <div ref={targetRef} className={cn("relative z-0", className)}>
-      <div
-        className={
-          "max-w-4xl"
-        }
-      >
-        <p
-          ref={targetRef}
-          className={
-            "text-lg md:text-2xl font-medium text-white/20"
-          }
-        >
-          {words.map((word, i) => {
-            const start = i / words.length;
-            const end = start + 1 / words.length;
-            return (
-              <Word key={i} progress={scrollYProgress} range={[start, end]}>
-                {word}
-              </Word>
-            );
-          })}
-
-        </p>
-      </div>
+    <div ref={targetRef} className={cn("", className)}>
+      {sentences.map((sentence, sentenceIndex) => {
+        const words = sentence.trim().split(" ");
+        return (
+          <div key={sentenceIndex}>
+            {words.map((word, i) => {
+              const wordIndex = sentenceIndex * words.length + i;
+              const start = wordIndex / totalWords;
+              const end = (wordIndex + 1) / totalWords;
+              return (
+                <Word key={i} progress={scrollYProgress} range={[start, end]}>
+                  {word}{" "}
+                </Word>
+              );
+            })}
+          </div>
+        );
+      })}
     </div>
   );
 };
@@ -57,12 +52,16 @@ interface WordProps {
 }
 
 const Word: FC<WordProps> = ({ children, progress, range }) => {
-  const opacity = useTransform(progress, range, [1, 0.2]);
-
+  const opacity = useTransform(progress, range, [0.2, 1]);
+  
   return (
     <motion.span
-      style={{ opacity: opacity }}
-      className="relative text-white inline-block mr-2"
+      style={{
+        opacity,
+        color: "white",
+        transition: "opacity 0.2s ease-out",
+      }}
+      className="text-white/20"
     >
       {children}
     </motion.span>
