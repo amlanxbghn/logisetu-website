@@ -16,7 +16,7 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["start 80%", "end 20%"] // Adjusted offset for more responsive reveal
+    offset: ["start 80%", "end 20%"]
   });
 
   const sentences = text.split("|");
