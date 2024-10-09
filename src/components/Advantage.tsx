@@ -10,8 +10,8 @@ interface AdvantageCardProps {
 
 const Advantage = () => {
     return (
-        <div className="w-full pt-12 md:pt-24">
-            <div className="container mb-32">
+        <div className="w-full py-12 md:py-24 lg:py-32">
+            <div className="container">
                 <h2 className="text-4xl text-center md:text-5xl font-bold pb-1.5 mb-1.5 tracking-tight bg-gradient-to-b from-white via-white to-[#111111] text-transparent bg-clip-text">
                     Competitive Advantage
                 </h2>
