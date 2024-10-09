@@ -19,10 +19,10 @@ const Hero = () => {
           </div>
         </div>
 
-        <h1 className="text-center text-5xl md:text-6xl lg:text-7xl leading-tight md:leading-tight lg:leading-tight md:font-medium max-w-[1200px] mx-auto mb-3 md:mb-6">
+        <h1 className="text-center text-5xl md:text-6xl lg:text-7xl leading-tight md:leading-tight lg:leading-tight md:font-medium max-w-[1200px] mx-auto mb-3 md:mb-6 bg-gradient-to-br from-white from-30% to-white/40 bg-clip-text text-transparent">
           Transforming the Future of <span className="p-1 bg-gradient-to-l from-[#3B82F6] via-[#4dedff] to-white text-transparent bg-clip-text"> Transportation.</span>
         </h1>
-        <p className="mb-6 md:mb-12 text-center text-zinc-400 text-md md:text-lg font-medium">
+        <p className="mb-6 md:mb-12 text-center text-zinc-400 text-lg md:text-xl font-medium">
             Revolutionizing India's Logistics with Digital Efficiency on LogiSetu.
         </p>
 

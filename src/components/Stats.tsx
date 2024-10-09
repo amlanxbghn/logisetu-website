@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { DollarSign, TrendingUp, AlertTriangle, Truck } from 'lucide-react';
+import { DollarSign, TrendingUp, AlertTriangle, Split } from 'lucide-react';
 import NumberTicker from './ui/number-ticker';
 
 const Separator = () => (
@@ -15,7 +15,7 @@ const Stats = () => {
                 <h2 className="text-4xl text-center md:text-5xl font-semibold pb-3 mb-3 tracking-tight bg-gradient-to-b from-white via-white to-[#111111] text-transparent bg-clip-text">
                     India's Logistics Industry at a Glance
                 </h2>
-                <div className="max-w-4xl lg:max-w-7xl mx-auto bg-gradient-to-tr from-blue-500 via-blue-600 to-[#4dedff] rounded-3xl p-16 md:p-20 text-center relative overflow-hidden z-5">
+                <div className="max-w-4xl lg:max-w-7xl mx-auto bg-gradient-to-tr from-blue-600 via-blue-500 to-[#4dedff] rounded-3xl p-16 md:p-20 text-center relative overflow-hidden z-5">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
                         <div className="flex flex-col items-center">
                             <DollarSign className="text-white mb-3" size={32} />
@@ -42,7 +42,7 @@ const Stats = () => {
                         </div>
                         <Separator />
                         <div className="flex flex-col items-center">
-                            <Truck className="text-white mb-3" size={32} />
+                            <Split className="text-white mb-3" size={32} />
                             <div className="text-3xl md:text-4xl font-bold text-white mb-1">High</div>
                             <div className="mb-6 text-md md:text-lg font-medium text-white/90">Inefficiencies</div>
                         </div>
