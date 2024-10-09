@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md"
 
 const Hero = () => {
   return (
-    <div className="min-h-screen relative py-36">
+    <div className="relative py-36">
       <div className="container">
 
         <div className="z-10 flex mb-12 items-center justify-center">
@@ -23,7 +23,7 @@ const Hero = () => {
           Transforming the Future of <span className="p-1 bg-gradient-to-l from-[#3B82F6] via-[#4dedff] to-white text-transparent bg-clip-text"> Transportation.</span>
         </h1>
         <p className="mb-6 md:mb-12 text-center text-zinc-400 text-md md:text-lg font-medium">
-            Revolutionizing India' Logistics with Digital Efficiency on LogiSetu.
+            Revolutionizing India's Logistics with Digital Efficiency on LogiSetu.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">

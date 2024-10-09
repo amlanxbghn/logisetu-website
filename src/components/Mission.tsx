@@ -4,7 +4,7 @@ const Mission = () => {
     return (
         <div className="bg-[#111111] w-full py-12 md:py-24 lg:py-32">
             <div className="container max-w-[600px]">
-                <h2 className="text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-b from-white via-white to-[#111111] text-transparent bg-clip-text mb-12">
+                <h2 className="text-4xl md:text-5xl font-semibold tracking-tight bg-gradient-to-b from-white via-white to-[#111111] text-transparent bg-clip-text mb-16">
                     Our Mission
                 </h2>
                 <div>

@@ -6,12 +6,14 @@ import BusinessModel from "@/components/BusinessModel";
 import Hero from "@/components/Hero";
 import Advantage from "@/components/Advantage";
 import Mission from "@/components/Mission";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
+      <Stats />
       <Mission />
       <Advantage />
       <BusinessModel />
