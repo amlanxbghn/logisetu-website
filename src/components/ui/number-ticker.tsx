@@ -19,7 +19,7 @@ export default function NumberTicker({
   decimalPlaces?: number;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const motionValue = useMotionValue(direction === "down" ? value : 0);
+const motionValue = useMotionValue<number>(direction === "down" ? value : 0);
   const springValue = useSpring(motionValue, {
     damping: 60,
     stiffness: 100,
@@ -53,6 +53,8 @@ export default function NumberTicker({
         className,
       )}
       ref={ref}
-    />
+    >
+      {value}
+    </span>
   );
 }

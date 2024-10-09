@@ -17,7 +17,7 @@ const CTA = () => {
 
                     <div className="relative z-10 mx-auto">
                         <h2 className="text-4xl md:text-5xl font-bold mb-3 tracking-tight">
-                            Drive India's{' '}
+                            Drive India&apos;s{' '}
                             <span className="inline-block">
                                 <span className="bg-gradient-to-r from-[#4dedff] to-white text-transparent bg-clip-text">
                                     Logistics Revolution
